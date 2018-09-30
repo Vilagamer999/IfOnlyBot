@@ -4,6 +4,13 @@ import sys
 import random
 from keep_alive import keep_alive
 
+joke = ( "Q: Hear about the creeper that went to a party? \n\n
+A: He had a BLAST!" , "Q: Which musical instrument do skeletons play? \n\n
+A: Trom-Bone" , "Q: Why didn’t the skeleton go to the prom? \n\n
+A: He had no body to dance with?" , "Q: What kind of music do Minecraft players listen to? \n\n
+A: Bed-rock and roll.", "Q: What do Australian Creepers use to hunt? \n\n
+A: BOOM-a-rangs" )
+
 client = discord.Client()
 
 @client.event
@@ -36,6 +43,13 @@ async def on_message(message):
 		    sys.exit("Detected a !debug.stop request")
 	    elif message.content.startswith('!serverinfo'):
 		    tmp = await client.send_message(message.channel, 'Coming soon')
+	    elif message.content.startswith('!joke'):
+		    tmp = await client. lol = random.sample joke
+			send_message(message.channel = lol)
+	    elif message.content.startswith('!user'):
+		    tmp = await client.random.choice(server.members).mention
+	
+
 
 token = os.environ.get("DISCORD_BOT_SECRET")
 client.run(token)
