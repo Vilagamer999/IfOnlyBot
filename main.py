@@ -43,8 +43,5 @@ async def on_message(message):
 			send_message(message.channel = lol)
 	    elif message.content.startswith('!user'):
 		    tmp = await client.random.choice(server.members).mention
-	
-
-
 token = os.environ.get("DISCORD_BOT_SECRET")
 client.run(token)
