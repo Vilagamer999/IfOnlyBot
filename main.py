@@ -4,12 +4,7 @@ import sys
 import random
 from keep_alive import keep_alive
 
-joke = ( "Q: Hear about the creeper that went to a party? \n\n
-A: He had a BLAST!" , "Q: Which musical instrument do skeletons play? \n\n
-A: Trom-Bone" , "Q: Why didn’t the skeleton go to the prom? \n\n
-A: He had no body to dance with?" , "Q: What kind of music do Minecraft players listen to? \n\n
-A: Bed-rock and roll.", "Q: What do Australian Creepers use to hunt? \n\n
-A: BOOM-a-rangs" )
+joke = ( "Q: Hear about the creeper that went to a party? \n\nA: He had a BLAST!", "Q: Which musical instrument do skeletons play? \n\nA: Trom-Bone", "Q: Why didn’t the skeleton go to the prom? \n\nA: He had no body to dance with?", "Q: What kind of music do Minecraft players listen to? \n\nA: Bed-rock and roll.", "Q: What do Australian Creepers use to hunt? \n\nA: BOOM-a-rangs")
 
 client = discord.Client()
 
